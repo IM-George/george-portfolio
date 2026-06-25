@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  background: #0e100f;
+  color: #f4f6f4;
+  font-family: 'Inter', system-ui, sans-serif;
+  overflow-x: hidden;
+}
+
+/* Minimal, on-brand scrollbar */
+::-webkit-scrollbar { width: 9px; }
+::-webkit-scrollbar-track { background: #0e100f; }
+::-webkit-scrollbar-thumb { background: #262b27; border-radius: 999px; }
+::-webkit-scrollbar-thumb:hover { background: #34403a; }
+
+::selection { background: #0ae448; color: #0e100f; }
+
+/* GSAP-green gradient text */
+.text-gradient {
+  background: linear-gradient(100deg, #f4f6f4 0%, #9cff57 45%, #0ae448 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* SplitText: mask each line so chars/words rise from behind it */
+.split-line { overflow: hidden; }
+
+/* Throwable badges should feel grabbable */
+.badge { touch-action: none; user-select: none; }
+.badge:active { cursor: grabbing; }
+
+/* ScrollSmoother wrapper safety (plugin also sets these inline) */
+#smooth-wrapper { overflow: hidden; }
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.001ms !important;
+    transition-duration: 0.001ms !important;
+  }
+}
