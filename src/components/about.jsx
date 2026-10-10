@@ -43,14 +43,22 @@ export function About() {
       <SectionLabel index="(01)">About</SectionLabel>
 
       <div className="grid gap-16 md:grid-cols-[1.5fr_1fr]">
-        <SplitReveal
-          as="h2"
-          type="words"
-          stagger={0.012}
-          className="font-display text-3xl font-medium leading-[1.2] tracking-tight text-chalk md:text-[2.7rem]"
-        >
-          {ABOUT}
-        </SplitReveal>
+        <div className="flex flex-col gap-8">
+          <SplitReveal
+            as="h2"
+            type="words"
+            stagger={0.012}
+            className="font-display text-3xl font-medium leading-[1.2] tracking-tight text-chalk md:text-[2.7rem]"
+          >
+            {ABOUT.split('\n\n')[0]}
+          </SplitReveal>
+          
+          <FadeIn delay={0.2} className="space-y-4 text-mist md:text-lg leading-relaxed max-w-2xl">
+            {ABOUT.split('\n\n').slice(1).map((p, i) => (
+              <p key={i}>{p}</p>
+            ))}
+          </FadeIn>
+        </div>
 
         <div className="space-y-8" data-speed="1.08">
           {EXPERIENCE.map((job) => (

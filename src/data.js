@@ -1,8 +1,8 @@
 export const PROFILE = {
   name: 'George M',
-  role: 'Senior React.js Developer',
-  tagline: 'Frontend Engineer',
-  location: 'Chennai, Tamil Nadu',
+  role: 'Senior Frontend Engineer',
+  tagline: 'Building Scalable Products, Design Systems & Intelligent User Experiences',
+  location: 'Chennai, Tamil Nadu, India',
   email: 'nijenthen@gmail.com',
   phone: '+91 8248325081',
   links: {
@@ -11,13 +11,19 @@ export const PROFILE = {
   },
 }
 
-export const ABOUT = `I'm a React.js developer with 4+ years designing, building and maintaining scalable single-page applications. I turn business requirements, wireframes and Figma designs into production-ready interfaces — reusable component libraries, clean state management and fast, accessible experiences.`
+export const ABOUT = `Frontend Engineer with 4+ years of experience building SaaS products, recruitment platforms, enterprise systems, and AI-powered applications.
+
+I specialize in React, TypeScript, frontend architecture, performance optimization, and scalable component systems. Over the years, I have led the development of candidate management platforms, recruitment automation tools, AI interview systems, HRMS solutions, and job aggregation products used by recruiters and business teams.
+
+My approach combines product thinking, clean architecture, and engineering excellence. I focus on creating maintainable systems, reusable design patterns, and high-performance user experiences that scale across teams and products.
+
+Currently exploring Micro Frontends, Module Federation, Nx Monorepos, AI-assisted workflows, authentication systems, and modern frontend platform engineering.`
 
 export const STATS = [
-  { value: 4, suffix: '+', label: 'Years building for the web' },
-  { value: 60, suffix: '+', label: 'Reusable components shipped' },
-  { value: 20, suffix: '+', label: 'REST APIs integrated' },
-  { value: 5, suffix: '', label: 'Products taken to production' },
+  { value: 4, suffix: '+', label: 'Years of Product Engineering' },
+  { value: 7, suffix: '+', label: 'Production Products Built' },
+  { value: 50, suffix: '+', label: 'Complex Features Delivered' },
+  { value: 10000, suffix: '+', label: 'Users Impacted' },
 ]
 
 export const EXPERIENCE = [
@@ -25,15 +31,17 @@ export const EXPERIENCE = [
     company: '10xscale.ai',
     role: 'Software Engineer',
     period: 'Nov 2023 — Present',
-    notes:
-      'SPAs with React, TypeScript & Redux Toolkit. Interactive dashboards, candidate-management & workflow-automation tools. Perf work via code-splitting, memoization & lazy loading.',
+    notes: `Leading frontend development across multiple recruitment and AI-driven products. Architected scalable React and TypeScript applications, implemented advanced state management with Redux Toolkit, integrated GraphQL and REST services, and optimized performance through code splitting, lazy loading, virtualization, and memoization.
+
+Delivered candidate sourcing systems, recruitment workflows, AI interview platforms, communication hubs, and search-driven experiences powered by Typesense.`,
   },
   {
     company: 'ABSHRMS',
     role: 'Software Developer',
     period: 'May 2022 — Oct 2023',
-    notes:
-      'Enterprise HRMS — payroll, attendance & leave. Built a 40+ component library, integrated 20+ REST APIs, and tuned large-dataset rendering with virtualization & pagination.',
+    notes: `Developed enterprise HRMS modules covering payroll, attendance, employee lifecycle management, and leave systems.
+
+Built and maintained a reusable design system containing 40+ shared components, integrated numerous backend services, and optimized large-scale data rendering through virtualization and pagination techniques.`,
   },
 ]
 
@@ -44,8 +52,9 @@ export const PROJECTS = [
     kind: 'Recruitment Automation Platform',
     year: '2023 — 25',
     stack: ['React', 'TypeScript', 'Redux Toolkit', 'FastAPI', 'Typesense', 'graphql', 'postgres'],
-    blurb:
-      'A platform that streamlines hiring — JD creation, candidate sourcing, lead & pipeline management, plus centralised comms across LinkedIn, Gmail, WhatsApp and calls.',
+    blurb: `Enterprise recruitment operating system designed to automate the complete hiring lifecycle. Built candidate sourcing workflows, ATS pipelines, communication orchestration, search infrastructure using Typesense, and AI-assisted recruitment capabilities.
+
+Focused on scalability, performance, and recruiter productivity across thousands of candidate records.`,
   },
   {
     id: '02',
@@ -53,8 +62,9 @@ export const PROJECTS = [
     kind: 'Job Aggregation Platform',
     year: '2024 —',
     stack: ['React', 'TypeScript', 'FastAPI', 'REST'],
-    blurb:
-      'Centralised job discovery aggregating LinkedIn, Naukri, Indeed & Apna. Automated sync workflows and recommendations behind responsive, data-driven dashboards.',
+    blurb: `Multi-source job intelligence platform aggregating opportunities from LinkedIn, Naukri, Indeed, and Apna into a unified search experience.
+
+Designed automated synchronization workflows, recommendation engines, and responsive analytics dashboards to simplify large-scale job discovery.`,
   },
   {
     id: '03',
@@ -71,8 +81,9 @@ export const PROJECTS = [
     kind: 'LinkedIn Lead Extraction · X-Ray Search',
     year: '2026 —',
     stack: ['JavaScript', 'React', 'Chrome APIs'],
-    blurb:
-      'A lead-extraction extension that maps LinkedIn profiles into recruitment workflows, plus a Google X-Ray query builder to supercharge candidate sourcing.',
+    blurb: `Productivity-focused recruitment extensions enabling recruiter workflow automation.
+
+Built LinkedIn profile extraction, candidate enrichment pipelines, and advanced Google X-Ray search generation tools that significantly reduced sourcing effort.`,
   },
   {
     id: '05',
@@ -89,8 +100,9 @@ export const PROJECTS = [
     kind: 'AI-Powered Interview Platform',
     year: '2025 —',
     stack: ['React', 'AI / LLMs', 'Typescript', 'Redux Toolkit',],
-    blurb:
-      'A platform to schedule and conduct AI-driven interviews based on resumes and JDs. Features conversational AI for asking mixed programming/choice questions, with proctoring and camera facilities.',
+    blurb: `AI-powered interview platform capable of generating and conducting dynamic technical assessments based on resumes and job descriptions.
+
+Integrated conversational AI workflows, automated evaluation pipelines, candidate monitoring capabilities, and real-time interview experiences.`,
   },
   {
     id: '07',
@@ -98,37 +110,53 @@ export const PROJECTS = [
     kind: 'E-Learning Platform',
     year: '2026',
     stack: ['React', 'TypeScript', 'Stripe', 'Video Streaming'],
-    blurb:
-      'An online course marketplace similar to Udacity and Udemy. Enables users to purchase, access, and track progress across various video-based educational content.',
+    blurb: `Full-scale learning management platform supporting course publishing, video delivery, payment processing, learner progress tracking, and content monetization.
+
+Designed with scalability, modularity, and modern SaaS architecture principles.`,
   },
 ]
 
 export const SKILLS = [
   {
-    group: 'Frontend',
-    items: ['React.js', 'Next.js', 'JavaScript (ES6+)', 'TypeScript', 'HTML5', 'CSS3'],
+    group: 'Frontend Engineering',
+    items: ['React', 'Next.js', 'TypeScript', 'JavaScript', 'HTML5', 'CSS3'],
+  },
+  {
+    group: 'Architecture',
+    items: ['Micro Frontends', 'Module Federation', 'Nx Monorepos', 'Design Systems', 'Component Architecture', 'Scalable Frontend Patterns'],
   },
   {
     group: 'State & Data',
-    items: ['Redux Toolkit', 'RTK Query', 'Context API', 'REST', 'Axios', 'JWT / OAuth'],
+    items: ['Redux Toolkit', 'RTK Query', 'GraphQL', 'REST APIs', 'Typesense', 'OAuth2', 'JWT'],
   },
   {
-    group: 'Styling & UI',
-    items: ['Tailwind CSS', 'SCSS', 'Material UI', 'Responsive Design', 'Accessibility (ARIA)', 'Shadcn UI'],
+    group: 'Performance Engineering',
+    items: ['Code Splitting', 'Lazy Loading', 'Bundle Optimization', 'Virtualization', 'Caching Strategies', 'Performance Profiling'],
   },
   {
-    group: 'Performance',
-    items: ['Code Splitting', 'Lazy Loading', 'Memoization', 'Virtualization', 'Bundle Optimization'],
+    group: 'Platform & DevOps',
+    items: ['Docker', 'CI/CD', 'GitHub Actions', 'Vite', 'Webpack'],
   },
   {
-    group: 'Testing',
-    items: ['Jest', 'React Testing Library', 'Unit Testing', 'Functional Testing'],
-  },
-  {
-    group: 'Tooling & Backend',
-    items: ['Git / GitHub', 'CI/CD', 'Docker', 'Webpack', 'FastAPI', 'NestJS', 'Node.js'],
+    group: 'Backend & APIs',
+    items: ['Node.js', 'NestJS', 'FastAPI', 'PostgreSQL', 'Authentication', 'Authorization'],
   },
 ]
+
+export const WHAT_I_DO = [
+  'Build scalable React and TypeScript applications',
+  'Design reusable component libraries and design systems',
+  'Architect enterprise frontend platforms',
+  'Optimize application performance and bundle size',
+  'Implement authentication and authorization systems',
+  'Develop AI-powered product experiences',
+  'Build Micro Frontend and Monorepo architectures',
+  'Collaborate closely with product, design, and backend teams',
+]
+
+export const PHILOSOPHY = `I believe great software is not defined by frameworks but by maintainability, scalability, and user impact.
+
+My goal is to build systems that are easy to evolve, enjoyable to use, and capable of supporting business growth for years. Whether designing a component library, optimizing performance, or architecting frontend platforms, I prioritize simplicity, consistency, and long-term sustainability.`
 
 export const BADGES = [
   { label: 'React', tone: 'green', style: { top: '6%', left: '8%', rotate: -8 } },
